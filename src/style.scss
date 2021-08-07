@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --mainBg: salmon;
 }
@@ -13,5 +17,6 @@ body {
   background-color: linear-gradient(to top, red, green);
   h1 {
     color: aqua;
+    @apply px-4 py-2 rounded font-semibold bg-gray-200 text-black;
   }
 }
