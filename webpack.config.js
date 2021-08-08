@@ -28,7 +28,7 @@ module.exports = {
     ],
   },
   plugins: [new MiniCssExtractPlugin()],
-
+  target: process.env.NODE_ENV === "production" ? "browserslist" : "web",
   devtool: "source-map",
   devServer: {
     contentBase: "./public",

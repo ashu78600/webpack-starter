@@ -6,7 +6,7 @@ import SearchBar from "./components/SearcBar";
 
 const App = () => {
   return (
-    <div className="mx-auto">
+    <div className="flex flex-col items-center  ">
       <SearchBar />
       <ResultArea />
       <FooterBar />
