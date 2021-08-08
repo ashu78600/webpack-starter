@@ -1,9 +1,6 @@
-import { wizard } from "./wizard";
-import getData from "./getData";
+import React from "react";
+import ReactDom from "react-dom";
+import App from "./App";
 import "./style.scss";
 
-const x = [1, 2, 3, 4];
-let y = [...x, 9, 9, 86];
-console.log(y);
-console.log(wizard);
-getData();
+ReactDom.render(<App />, document.getElementById("root"));
